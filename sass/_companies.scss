@@ -1,0 +1,9 @@
+.companies{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #E5E5E5;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}

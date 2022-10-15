@@ -1,0 +1,69 @@
+.instagram {
+    background-color:#F1F1F1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.insta-title{
+    font-weight: 500;
+        font-size: 45px;
+        line-height: calc(53 / 45);
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+    
+        color: #000000;
+        margin-bottom: 60px;
+}
+.insta-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.insta-form-title{
+    font-weight: 500;
+        font-size: 45px;
+        line-height: calc(53 / 45);
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+    
+        color: #000000;
+        margin-bottom: 80px;
+}
+.insta-form{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.insta-input{
+    border: none;
+    outline: none;
+    width: 643px;
+    height: 32px;
+    border-bottom: 2px solid black;
+    background-color: #f1f1f1;
+    color: #717171;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(22 / 16);
+        margin-right: 27px;
+    &::placeholder{
+        color: #717171;
+        font-weight: 500;
+            font-size: 16px;
+            line-height: calc(22 / 16);
+            text-transform: capitalize;
+    }
+}
+.insta-submit{
+    background-color: #f1f1f1;
+    border: none;
+    width: 90px;
+    height: 32px;
+    border-bottom: 2px solid black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    cursor: pointer;
+    text-transform: capitalize;
+}
