@@ -77,6 +77,9 @@
 .staff-link{
     display: block;
     margin-top: 18px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
 }
 .staff-sale{
     position: absolute;
@@ -94,7 +97,15 @@
         text-transform: uppercase;
         color: aliceblue;
 }
-
+.staff-item{
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
 .staff-hot {
     position: absolute;
     top: 26px;
