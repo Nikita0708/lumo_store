@@ -85,22 +85,34 @@ ol {
   border-bottom: 2px solid black;
 }
 
-.header-cart {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.71;
-  color: var(--black-color);
-  display: flex;
-  align-items: center;
-}
-.header-cart::before {
-  content: url("../img/cart-black.svg");
-  margin-right: 8px;
-}
-
 .logo {
   width: 180px;
   height: 34px;
+}
+
+.smart-basket__min {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E2832;
+  width: 60px;
+  height: 40px;
+}
+
+.header-cart {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smart-basket__min-count {
+  color: white;
+  margin-left: 5px;
 }
 
 .hero {
@@ -374,6 +386,31 @@ ol {
 
 .staff-hoodie {
   padding-top: 80px;
+}
+
+.staff-size-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.staff-size-item {
+  height: 40px;
+  width: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  transition: all 250ms linear;
+}
+.staff-size-item:hover {
+  background-color: black;
+  color: #E5E5E5;
+}
+
+.staff-size-item--active {
+  background-color: black;
+  color: #E5E5E5;
 }
 
 .bestsellers {

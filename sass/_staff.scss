@@ -159,3 +159,25 @@
 .staff-hoodie {
     padding-top: 80px;
 }
+.staff-size-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.staff-size-item {
+    height: 40px;
+    width: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    transition: all 250ms linear;
+    &:hover {
+        background-color: black;
+        color: #E5E5E5;
+    }
+}
+.staff-size-item--active{
+    background-color: black;
+    color: #E5E5E5;
+}
