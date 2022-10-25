@@ -13,10 +13,13 @@
     font-weight: 400;
     font-size: 15px;
     line-height: calc(20 / 15);
-    width: 367px;
+    width: 100%;
     text-transform: capitalize;
     color: #292929;
     margin-bottom: 39px;
+    @media screen and (min-width: 768px) {
+            width: 367px;
+        }
 }
 .footer-soc-list{
     display: flex;
@@ -24,9 +27,6 @@
 }
 .footer-soc-item:not(:last-child){
     margin-right: 36px;
-}
-.footer-wrap{
-    margin-right: 81px;
 }
 .footer-link{
     font-weight: 400;

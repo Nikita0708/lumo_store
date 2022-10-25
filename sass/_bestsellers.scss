@@ -4,12 +4,15 @@
 }
 .bestsellers-title{
     font-weight: 500;
-        font-size: 45px;
+        font-size: 30px;
         line-height: calc(53 / 45);
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: capitalize;
         margin-bottom: 40px;
+        @media screen and (min-width: 768px) {
+                font-size: 45px;
+            }
 }
 .bestsellers-wrap {
     display: flex;

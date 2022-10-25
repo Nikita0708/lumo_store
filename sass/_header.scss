@@ -9,14 +9,18 @@
     // padding-bottom: px;
 }
 .header-list{
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-top: 30px;
+    @media screen and (min-width: 768px) {
+            display: flex;
+        }
 }
 .header-link{
     font-weight: 400;
     border-bottom: 0px solid black;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     color: var(--black-color);
     &:hover {

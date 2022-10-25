@@ -1,18 +1,24 @@
 .explore-title{
     font-weight: 500;
-        font-size: 45px;
+        font-size: 30px;
         line-height: 0.85;
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: capitalize;
         margin-bottom: 102px;
+        @media screen and (min-width: 768px) {
+                font-size: 45px;
+            }
 }
 .explore{
     padding-bottom: 140px;
     background-color: #E5E5E5;
+    padding-top: 140px;
 }
 .gallery{
-    display: flex;
+    @media screen and (min-width: 1320px) {
+                display: flex;
+        }
 }
 .gallery-wrap{
     display: grid;
@@ -20,15 +26,23 @@
     align-content: space-between;
     grid-column-gap: 24px;
     & img {
-        min-width: 312px;
-        height: 312px;
+        
+        @media screen and (min-width: 1320px) {
+                min-width: 312px;
+                    height: 312px;
+            }
     }
     
 }
 .gallery-img--first{
-    margin-right: 24px;
-    width: 648px;
-    height: 648px;
+    width: 100%;
+    margin-bottom: 24px;
+    @media screen and (min-width: 1320px) {
+            width: 648px;
+            height: 648px;
+            margin-right: 24px;
+            margin-bottom: 0;
+        }
 }
 .gallery-img{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

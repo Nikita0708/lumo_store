@@ -5,12 +5,15 @@
 
 .staff-title {
     font-weight: 500;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 0.85;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: capitalize;
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+            font-size: 45px;
+        }
 }
 .filter-list{
     margin-left: 0;
@@ -19,7 +22,7 @@
 }
 .filter-link{
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 0.73;
     text-transform: capitalize;
     color: #777777;
@@ -27,21 +30,33 @@
     &:hover {
         color: black;
     }
+        @media screen and (min-width: 768px) {
+                font-size: 16px;
+        }
 }
 .filter-link--current {
      color: var(--black-color);
 }
 .filter-item:not(:last-child){
-    margin-right: 40px;
+    margin-right: 20px;
+    @media screen and (min-width: 768px) {
+            margin-right: 40px;
+        }
 }
 .staff-list{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 34px;
-    grid-column-gap: 24px;
+    grid-row-gap: 10px;
     & li {
         position: relative;
     }
+        @media screen and (min-width: 768px) {
+                grid-column-gap: 24px;
+                grid-row-gap: 34px;
+                grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (min-width: 1320px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
 }
 .staff-btn{
     width: 100%;
@@ -73,6 +88,9 @@
     text-transform: capitalize;
     margin-bottom: 15px;
     color: black;
+}
+.staff-img{
+    width: 100%;
 }
 .staff-link{
     display: block;
@@ -135,7 +153,8 @@
         line-height: calc(22 / 16);
         text-transform: capitalize;
         color: #000000;
-        margin-left: 198px;
+        margin-right: 0;
+        display: block;
 }
 .old-price{
     font-weight: 600;
@@ -166,7 +185,7 @@
 }
 .staff-size-item {
     height: 40px;
-    width: 61px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,8 +195,22 @@
         background-color: black;
         color: #E5E5E5;
     }
+        @media screen and (min-width: 768px) {
+            width: 61px;
+        }
+
 }
 .staff-size-item--active{
     background-color: black;
     color: #E5E5E5;
+}
+.staff-foto {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    width: 100%;
+
 }
