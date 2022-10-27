@@ -1,0 +1,32 @@
+.why{
+    padding-top: 138px;
+    padding-bottom: 56px;
+    background-color: #E5E5E5;
+}
+
+.why-title{
+    font-weight: 500;
+        font-size: 30px;
+        line-height: 0.85;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    
+        @media screen and (min-width: 768px) {
+            font-size: 45px;
+        }
+}
+
+.why-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 25px;
+    }
+}
