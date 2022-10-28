@@ -11,7 +11,7 @@
 
 		// *** /SMTP *** //
    
-    const SENDER = 'nreva97@gmail.com';
+    const SENDER = 'workoutnick2001@gmail.com';
     const CATCHER = 'nreva97@gmail.com';
     const SUBJECT = 'Заявка с сайта';
     const CHARSET = 'UTF-8';
