@@ -1,6 +1,9 @@
 .staff{
     background-color: #E5E5E5;
-    padding-bottom: 138px;
+    padding-bottom: 80px;
+    @media screen and (min-width: 768px) {
+                padding-bottom: 138px;
+        }
 }
 
 .staff-title {
@@ -8,7 +11,6 @@
     font-size: 30px;
     line-height: 0.85;
     text-align: center;
-    letter-spacing: 0.1em;
     text-transform: capitalize;
     margin-bottom: 40px;
     @media screen and (min-width: 768px) {
@@ -45,7 +47,9 @@
 }
 .staff-list{
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
     & li {
         position: relative;
     }
@@ -60,17 +64,21 @@
 }
 .staff-btn{
     width: 100%;
-    height: 56px;
+    height: 36px;
     border: none;
     color: aliceblue;
     background-color: #1E2832;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 12px;
     line-height: calc(21 / 18);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @media screen and (min-width: 768px) {
+            height: 56px;
+            font-size: 18px;
+        }
 }
 .staff-btn-text{
     display: flex;
@@ -83,14 +91,31 @@
 }
 .staff-item-title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     line-height: calc(22 / 16);
     text-transform: capitalize;
     margin-bottom: 15px;
     color: black;
+    @media screen and (min-width: 768px) {
+            font-size: 16px;
+        }
 }
 .staff-img{
     width: 100%;
+    height: auto;
+    @media screen and (min-width: 480px) {
+            height: 279px;
+        }
+    @media screen and (min-width: 768px) {
+            height: 404px;
+        }
+
+}
+.staff-img-link{
+    height: 279px;
+    @media screen and (min-width: 480px) {
+            height: 279px;
+        }
 }
 .staff-link{
     display: block;
@@ -142,19 +167,25 @@
 }
 .staff-item-bottom-text{
     font-weight: 400;
-        font-size: 16px;
+        font-size: 12px;
         line-height: calc(22 / 16);
         text-transform: capitalize;
         color: #777777;
+        @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
 }
 .staff-ordinary-price{
     font-weight: 600;
-        font-size: 16px;
+        font-size: 12px;
         line-height: calc(22 / 16);
         text-transform: capitalize;
         color: #000000;
         margin-right: 0;
         display: block;
+        @media screen and (min-width: 768px) {
+                font-size: 16px;
+            }
 }
 .old-price{
     font-weight: 600;
@@ -176,7 +207,10 @@
         margin-left: 12px;
 }
 .staff-hoodie {
-    padding-top: 80px;
+    padding-top: 33px;
+    @media screen and (min-width: 768px) {
+            padding-top: 80px;
+        }
 }
 .staff-size-list{
     display: flex;
@@ -184,18 +218,20 @@
     margin-bottom: 10px;
 }
 .staff-size-item {
-    height: 40px;
+    height: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #000000;
     transition: all 250ms linear;
+    outline: 1px solid grey;
     &:hover {
         background-color: black;
         color: #E5E5E5;
     }
         @media screen and (min-width: 768px) {
+            height: 40px;
             width: 61px;
         }
 
@@ -205,12 +241,15 @@
     color: #E5E5E5;
 }
 .staff-foto {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-weight: 600;
     color: #000000;
     display: block;
     width: 100%;
+    @media screen and (min-width: 768px) {
+            font-size: 20px;
+        }
 
 }

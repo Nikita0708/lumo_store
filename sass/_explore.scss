@@ -1,19 +1,23 @@
 .explore-title{
     font-weight: 500;
         font-size: 30px;
-        line-height: 0.85;
+        line-height: 1.2;
         text-align: center;
-        letter-spacing: 0.1em;
         text-transform: capitalize;
-        margin-bottom: 102px;
+        margin-bottom: 50px;
         @media screen and (min-width: 768px) {
                 font-size: 45px;
+                margin-bottom: 102px;
             }
 }
 .explore{
-    padding-bottom: 140px;
+    padding-bottom: 80px;
     background-color: #E5E5E5;
-    padding-top: 140px;
+    padding-top: 35px;
+    @media screen and (min-width: 768px) {
+                padding-top: 50px;
+                padding-bottom: 140px;
+        }
 }
 .gallery{
     @media screen and (min-width: 1320px) {
@@ -25,6 +29,7 @@
     grid-template-columns: 1fr 1fr;
     align-content: space-between;
     grid-column-gap: 24px;
+    grid-row-gap: 24px;
     & img {
         
         @media screen and (min-width: 1320px) {

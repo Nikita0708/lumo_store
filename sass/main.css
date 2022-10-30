@@ -50,6 +50,10 @@ ol {
   overflow: hidden;
 }
 
+.no-skroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -73,14 +77,36 @@ ol {
 }
 
 .header {
-  padding-top: 30px;
-  padding-bottom: 81px;
+  padding-top: 10px;
   background-color: #fff;
+  padding-bottom: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 123;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    position: unset;
+    padding-bottom: 81px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
 }
 
 .header-top-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header-link--mob {
+  display: unset;
+}
+@media screen and (min-width: 768px) {
+  .header-link--mob {
+    display: none;
+  }
 }
 
 .header-list {
@@ -97,17 +123,37 @@ ol {
 .header-link {
   font-weight: 400;
   border-bottom: 0px solid black;
-  font-size: 14px;
   line-height: 1.5;
+  font-size: 12px;
   color: var(--black-color);
 }
 .header-link:hover {
   border-bottom: 2px solid black;
 }
+@media screen and (min-width: 1320px) {
+  .header-link {
+    font-size: 14px;
+  }
+}
+
+.header-link--current {
+  border-bottom: 1px solid black;
+}
+@media screen and (min-width: 768px) {
+  .header-link--current {
+    border-bottom: 2px solid black;
+  }
+}
 
 .logo {
-  width: 180px;
-  height: 34px;
+  width: 100px;
+  height: 25px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 130px;
+    height: 40px;
+  }
 }
 
 .smart-basket__min {
@@ -147,24 +193,26 @@ ol {
   .hero .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
 .hero-title {
   font-weight: 300;
-  font-size: 54px;
-  line-height: 0.74;
-  margin-top: 74px;
-  margin-bottom: 52px;
+  font-size: 40px;
+  margin-bottom: 33px;
+  line-height: 1;
 }
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 64px;
+    margin-top: 74px;
   }
 }
 @media screen and (min-width: 1320px) {
   .hero-title {
     font-size: 74px;
+    line-height: 0.74;
   }
 }
 
@@ -174,17 +222,27 @@ ol {
 @media screen and (min-width: 768px) {
   .hero-img {
     display: block;
+    width: 300px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .hero-img {
+    display: block;
+    width: unset;
+    height: unset;
   }
 }
 
 .hero-text {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.83;
-  margin-bottom: 66px;
+  margin-bottom: 33px;
 }
 @media screen and (min-width: 768px) {
   .hero-text {
     font-size: 24px;
+    margin-bottom: 66px;
   }
 }
 @media screen and (min-width: 1320px) {
@@ -194,38 +252,52 @@ ol {
 }
 
 .hero-btn {
-  display: block;
-  width: 223px;
-  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 9px;
   padding-bottom: 8px;
+  width: 150px;
   background-color: #1E2832;
+  font-size: 16px;
   font-weight: 400;
-  font-size: 29px;
   line-height: 1.9;
   text-align: center;
   color: var(--white-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-btn {
+    width: 223px;
+    height: 72px;
+    font-size: 25px;
+  }
 }
 
 .explore-title {
   font-weight: 500;
   font-size: 30px;
-  line-height: 0.85;
+  line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: capitalize;
-  margin-bottom: 102px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
   .explore-title {
     font-size: 45px;
+    margin-bottom: 102px;
   }
 }
 
 .explore {
-  padding-bottom: 140px;
+  padding-bottom: 80px;
   background-color: #E5E5E5;
-  padding-top: 140px;
+  padding-top: 35px;
+}
+@media screen and (min-width: 768px) {
+  .explore {
+    padding-top: 50px;
+    padding-bottom: 140px;
+  }
 }
 
 @media screen and (min-width: 1320px) {
@@ -239,6 +311,7 @@ ol {
   grid-template-columns: 1fr 1fr;
   align-content: space-between;
   grid-column-gap: 24px;
+  grid-row-gap: 24px;
 }
 @media screen and (min-width: 1320px) {
   .gallery-wrap img {
@@ -269,7 +342,12 @@ ol {
 
 .staff {
   background-color: #E5E5E5;
-  padding-bottom: 138px;
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  .staff {
+    padding-bottom: 138px;
+  }
 }
 
 .staff-title {
@@ -277,7 +355,6 @@ ol {
   font-size: 30px;
   line-height: 0.85;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
@@ -325,7 +402,9 @@ ol {
 
 .staff-list {
   display: grid;
-  grid-row-gap: 10px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
 }
 .staff-list li {
   position: relative;
@@ -345,17 +424,23 @@ ol {
 
 .staff-btn {
   width: 100%;
-  height: 56px;
+  height: 36px;
   border: none;
   color: aliceblue;
   background-color: #1E2832;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.1666666667;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .staff-btn {
+    height: 56px;
+    font-size: 18px;
+  }
 }
 
 .staff-btn-text {
@@ -369,15 +454,40 @@ ol {
 
 .staff-item-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.375;
   text-transform: capitalize;
   margin-bottom: 15px;
   color: black;
 }
+@media screen and (min-width: 768px) {
+  .staff-item-title {
+    font-size: 16px;
+  }
+}
 
 .staff-img {
   width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 480px) {
+  .staff-img {
+    height: 279px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .staff-img {
+    height: 404px;
+  }
+}
+
+.staff-img-link {
+  height: 279px;
+}
+@media screen and (min-width: 480px) {
+  .staff-img-link {
+    height: 279px;
+  }
 }
 
 .staff-link {
@@ -432,20 +542,30 @@ ol {
 
 .staff-item-bottom-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.375;
   text-transform: capitalize;
   color: #777777;
 }
+@media screen and (min-width: 768px) {
+  .staff-item-bottom-text {
+    font-size: 16px;
+  }
+}
 
 .staff-ordinary-price {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.375;
   text-transform: capitalize;
   color: #000000;
   margin-right: 0;
   display: block;
+}
+@media screen and (min-width: 768px) {
+  .staff-ordinary-price {
+    font-size: 16px;
+  }
 }
 
 .old-price {
@@ -471,7 +591,12 @@ ol {
 }
 
 .staff-hoodie {
-  padding-top: 80px;
+  padding-top: 33px;
+}
+@media screen and (min-width: 768px) {
+  .staff-hoodie {
+    padding-top: 80px;
+  }
 }
 
 .staff-size-list {
@@ -481,13 +606,14 @@ ol {
 }
 
 .staff-size-item {
-  height: 40px;
+  height: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #000000;
   transition: all 250ms linear;
+  outline: 1px solid grey;
 }
 .staff-size-item:hover {
   background-color: black;
@@ -495,6 +621,7 @@ ol {
 }
 @media screen and (min-width: 768px) {
   .staff-size-item {
+    height: 40px;
     width: 61px;
   }
 }
@@ -505,7 +632,7 @@ ol {
 }
 
 .staff-foto {
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: 600;
@@ -513,10 +640,20 @@ ol {
   display: block;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .staff-foto {
+    font-size: 20px;
+  }
+}
 
 .bestsellers {
-  padding-bottom: 140px;
+  padding-bottom: 80px;
   background-color: #E5E5E5;
+}
+@media screen and (min-width: 768px) {
+  .bestsellers {
+    padding-bottom: 138px;
+  }
 }
 
 .bestsellers-title {
@@ -524,13 +661,13 @@ ol {
   font-size: 30px;
   line-height: 1.1777777778;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .bestsellers-title {
     font-size: 45px;
+    font-size: 30px;
   }
 }
 
@@ -565,16 +702,21 @@ ol {
 
 .instagram {
   background-color: #F1F1F1;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .instagram {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .insta-title {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.1777777778;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: capitalize;
   color: #000000;
   margin-bottom: 60px;
@@ -582,6 +724,7 @@ ol {
 @media screen and (min-width: 768px) {
   .insta-title {
     font-size: 45px;
+    font-size: 30px;
   }
 }
 
@@ -634,11 +777,17 @@ ol {
 
 .footer {
   background-color: #ffffff;
-  padding-bottom: 90px;
-  padding-top: 140px;
+  padding-bottom: 50px;
+  padding-top: 80px;
 }
 .footer .container {
   display: flex;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 90px;
+    padding-top: 110px;
+  }
 }
 
 .footer-logo {
@@ -731,6 +880,7 @@ ol {
   background-color: white;
   top: 0;
   z-index: 1;
+  margin: 0 auto;
 }
 .mob-menu .container {
   padding-top: 48px;
@@ -741,6 +891,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  overflow: scroll;
 }
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -753,6 +904,7 @@ ol {
   background-color: transparent;
   fill: #212121;
   margin-left: 0;
+  cursor: pointer;
 }
 .menu-open-btn:hover, .menu-open-btn:focus {
   fill: var(--hover-color);
@@ -780,15 +932,17 @@ ol {
   margin-top: 8px;
   margin-bottom: auto;
   margin-right: auto;
+  margin-bottom: 25px;
 }
 
 .mob-menu-link {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 25px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--default-color);
+  border-bottom: 1px solid black;
 }
 .mob-menu-link:hover, .mob-menu-link:focus {
   color: var(--hover-color);
@@ -867,9 +1021,15 @@ ol {
 }
 
 .why {
-  padding-top: 138px;
-  padding-bottom: 56px;
+  padding-top: 80px;
+  padding-bottom: 10px;
   background-color: #E5E5E5;
+}
+@media screen and (min-width: 768px) {
+  .why {
+    padding-top: 138px;
+    padding-bottom: 56px;
+  }
 }
 
 .why-title {
@@ -877,7 +1037,6 @@ ol {
   font-size: 30px;
   line-height: 0.85;
   text-align: center;
-  letter-spacing: 0.1em;
   text-transform: capitalize;
   margin-bottom: 40px;
 }
@@ -889,10 +1048,9 @@ ol {
 
 .why-text {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.3;
   text-align: center;
-  letter-spacing: 0.1em;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {

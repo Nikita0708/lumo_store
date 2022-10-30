@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if(empty($_POST['userName'])) {
 				echo 'notName';
 			} else {
-				$name = "<b>Имя: </b>" . strip_tags($_POST['userName']) . "; ";
+				$name = "<b>Ім'я: </b>" . strip_tags($_POST['userName']) . "; ";
 			}
 		}
 		if (isset($_POST['userTel']) ) {
@@ -36,12 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if(empty($_POST['agreement'])) {
                 echo 'agreement';
             } else {
-                $agreement = "<b>Соглашение: </b>" . strip_tags($_POST['agreement']) . "<br>";
+                $agreement = "<b>Згода: </b>" . strip_tags($_POST['agreement']) . "<br>";
             }
         }
 
         if (isset($_POST['finalPrice']) ) {
-            $finalPrice = "<b>Общая стоимость: </b>" . strip_tags($_POST['finalPrice']) . "<br>";
+            $finalPrice = "<b>Загальна ціна: </b>" . strip_tags($_POST['finalPrice']) . "<br>";
         }
 
 
