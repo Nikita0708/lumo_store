@@ -469,6 +469,8 @@ ol {
 .staff-img {
   width: 100%;
   height: auto;
+  overflow: hidden;
+  flex-grow: 1;
 }
 @media screen and (min-width: 480px) {
   .staff-img {
