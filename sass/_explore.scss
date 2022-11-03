@@ -10,6 +10,15 @@
                 margin-bottom: 102px;
             }
 }
+.gallery-link--first{
+    display: block;
+    @media screen and (min-width: 1320px) {
+            margin-right: 24px;
+            width: 648px;
+            height: 648px;
+            object-fit: cover;
+        }
+}
 .explore{
     padding-bottom: 80px;
     background-color: #E5E5E5;

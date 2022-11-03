@@ -288,6 +288,19 @@ ol {
   }
 }
 
+.gallery-link--first {
+  display: block;
+}
+@media screen and (min-width: 1320px) {
+  .gallery-link--first {
+    margin-right: 24px;
+    width: 648px;
+    height: 648px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .explore {
   padding-bottom: 80px;
   background-color: #E5E5E5;
@@ -468,9 +481,12 @@ ol {
 
 .staff-img {
   width: 100%;
-  height: auto;
+  height: 260px;
   overflow: hidden;
+  display: flex;
   flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 480px) {
   .staff-img {
@@ -485,10 +501,12 @@ ol {
 
 .staff-img-link {
   height: 279px;
+  display: flex;
 }
 @media screen and (min-width: 480px) {
   .staff-img-link {
     height: 279px;
+    display: unset;
   }
 }
 
@@ -585,11 +603,11 @@ ol {
 .sale-price {
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 1;
   text-align: right;
   text-transform: capitalize;
-  color: #FF6F61;
-  margin-left: 12px;
+  color: black;
+  margin-right: 12px;
 }
 
 .staff-hoodie {
@@ -645,6 +663,21 @@ ol {
 @media screen and (min-width: 768px) {
   .staff-foto {
     font-size: 20px;
+  }
+}
+
+.staff-color-list {
+  margin-top: 10px;
+}
+
+.staff-color-item {
+  font-size: 12px;
+  transition: all 250ms linear;
+  outline: 1px solid grey;
+}
+@media screen and (min-width: 768px) {
+  .staff-color-item {
+    font-size: 16px;
   }
 }
 
@@ -754,6 +787,21 @@ ol {
 
 .insta-wrap:hover .insta-img-block {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .insta-img {
+    width: 113px;
+    height: 113px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 1320px) {
+  .insta-img {
+    min-width: 200px;
+    height: 200px;
+  }
 }
 
 .insta-img-block {
