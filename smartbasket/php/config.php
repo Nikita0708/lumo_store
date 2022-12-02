@@ -12,7 +12,7 @@
 		// *** /SMTP *** //
    
     const SENDER = 'workoutnick2001@gmail.com';
-    const CATCHER = 'nikita112@lumo-store.space';
+    const CATCHER = 'kurtaua@kurta-ua.website';
     const SUBJECT = 'Заявка с сайта';
     const CHARSET = 'UTF-8';
     
